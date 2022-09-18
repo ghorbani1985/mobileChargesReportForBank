@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="En">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/png" href="../assets/images/RealEstateConsultantLogo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>به روز رسانی کارت شارژ موبایل</title>
-    <link rel="stylesheet" href="./build/tailwind.css"/>
-  </head>
-  <body class="text-slate-800 font-['Vazir'] h-screen">
-    <header class="bg-slate-800 contianer p-3 flex justify-center items-center border-b-2 border-b-gray-100 border-solid shadow mb-6">
-    <p class="text-white font-bold">سامانه به روزرسانی کارت شارژ موبایل در سیستم بانکی</p>
-     
-    </header>
-    <main class="container">
-<div class="overflow-x-auto relative">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-lg">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ">
-            <tr>
-                <th scope="col" class="py-3 px-6 rounded-tl-lg rounded-bl-lg">
-                  #
-                </th>
-                <th scope="col" class="py-3 px-6">
-                  Operator
-                </th>
-                <th scope="col" class="py-3 px-6">
-                    Code
-                </th>
-                <th scope="col" class="py-3 px-6">
-                    Amount
-                </th>
-                <th scope="col" class="py-3 px-6 rounded-tr-lg rounded-br-lg">
-                    CreatedDate
-                </th>
-            </tr>
-        </thead>
-        <tbody id="mainTable">
-          
-        </tbody>
-    </table>
-</div>
 
-    </main>
-    <script src="../src/js/main.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="../assets/images/RealEstateConsultantLogo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show Nasa API</title>
+  <link rel="stylesheet" href="./build/tailwind.css" />
+</head>
 
-  </body>
+<body class="text-slate-800 bg-gray-200 h-screen">
+  <header class="bg-slate-700 contianer p-3 flex justify-center md:justify-between items-center border-b-2 border-b-gray-100 border-solid shadow mb-6">
+    <div class="flex">
+      <img src="../assets/images/NASA_logo.svg.png" alt="nasaLogo" class="w-20 h-16" />
+    </div>
+    <ul class="flex-1 hidden md:flex">
+      <li class="px-5 py-2 text-white transition-all ease-in-out duration-500 hover:bg-white hover:text-orange-500 hover:rounded-lg">
+        <a href="#home" class=" px-5 py-2 transition-all ease-in-out duration-500 hover:text-orange-500">Home</a>
+      </li>
+      <li class="px-5 py-2 text-white transition-all ease-in-out duration-500 hover:bg-white hover:text-orange-500 hover:rounded-lg">
+        <a href="#Space" class=" px-5 py-2 transition-all ease-in-out duration-500 hover:text-orange-500">Space</a>
+      </li>
+      <li class="px-5 py-2 text-white transition-all ease-in-out duration-500 hover:bg-white hover:text-orange-500 hover:rounded-lg">
+        <a href="#Project" class=" px-5 py-2 transition-all ease-in-out duration-500 hover:text-orange-500">Project</a>
+      </li>
+      <li class="px-5 py-2 text-white transition-all ease-in-out duration-500 hover:bg-white hover:text-orange-500 hover:rounded-lg">
+        <a href="#About" class=" px-5 py-2 transition-all ease-in-out duration-500 hover:text-orange-500">About</a>
+      </li>
+    </ul>
+    <!--   <p class="text-white font-bold">Show Nasa Api</p> -->
+  </header>
+  <main class="container">
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="mainSection">
+
+
+  </main>
+  <div id="spaceItemsTemplate" class="hidden">
+    <div class="bg-white rounded-md p-2 border-2 border-white border-solid shadow-lg flex flex-col justify-between items-center overflow-hidden">
+         <div class="mb-4 w-full"><a href="__HDURL__" target="_blank"><img src="__IMAGE__" alt="" class="w-full h-60 object-fill rounded-md transition-all ease duration-700 hover:scale-110 cursor-pointer"></a></div>  
+       <div class="my-3"> <h3 >__TITLE__</h3></div>
+        <div class="flex ">
+          <a href=""  class="flex p-2 transition-all ease-in-out duration-500 text-orange-500 hover:text-orange-800 cursor-pointer">More
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+     </div>
+  </div>
+  <script src="../src/js/ApiAddress.js"></script>
+  <script src="../src/js/ApiHandler.js"></script>
+  <script src="../src/js/main.js"></script>
+</body>
+
 </html>
